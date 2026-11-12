@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Central Cricket Academy | Cricket Coaching in Gomti Nagar, Lucknow</title>
+<meta name="description" content="Central Cricket Academy in Gomti Nagar, Lucknow offers professional cricket coaching for beginners and advanced players. Join the academy today.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+ <a href="#home" class="logo"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#1f9d55"/><rect x="17" y="6" width="6" height="22" rx="2" fill="#fff" transform="rotate(25 20 20)"/><circle cx="26" cy="29" r="5" fill="#ff7a1a"/></svg><span data-c="name">Central Cricket Academy</span></a>
+ <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+ <nav><ul id="menu">
+  <li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#coaching">Coaching</a></li><li><a href="#facilities">Facilities</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li>
+  <li><a href="#admission" class="btn">Join Academy</a></li>
+ </ul></nav>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+ <span class="tag">Gomti Nagar · Lucknow</span>
+ <h1>Build your cricket dream with <span>Central Cricket Academy</span></h1>
+ <p>Professional cricket coaching in a disciplined, supportive environment, helping young players grow in skill, fitness and confidence.</p>
+ <div class="cta"><a href="#admission" class="btn">Join Now</a><a href="#contact" class="btn ghost">Contact Us</a></div>
+</div></section>
+
+<section id="about"><div class="wrap two">
+ <div class="rv"><span class="tag">About the academy</span><h2>Where young talent learns to play the right way</h2>
+ <p class="lead">Central Cricket Academy is a cricket training academy in Gomti Nagar, Lucknow, focused on developing young cricket talent through structured coaching, regular practice and a professional, disciplined training environment.</p></div>
+ <div class="mv rv"><div><h3>Our Mission</h3><p>To give every player quality coaching, discipline and opportunities to grow in the game.</p></div>
+ <div><h3>Our Vision</h3><p>To nurture confident, fit and skilled cricketers who can take their game to higher levels.</p></div></div>
+</div></section>
+
+<section class="alt" id="coaching"><div class="wrap">
+ <span class="tag">Programs</span><h2>Cricket coaching programs</h2>
+ <div class="grid" id="programs"></div>
+</div></section>
+
+<section id="facilities"><div class="wrap">
+ <span class="tag">Facilities</span><h2>Training facilities</h2>
+ <p class="lead">Facility details below are editable placeholders until confirmed by the academy. Edit them in <code>FACILITIES</code> in the script.</p>
+ <div class="grid" id="facGrid"></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+ <span class="tag">Why us</span><h2>Why choose us?</h2>
+ <div class="grid" id="why"></div>
+</div></section>
+
+<section id="team"><div class="wrap">
+ <span class="tag">Coaching team</span><h2>Meet our coaches</h2>
+ <div class="grid" id="coaches"></div>
+</div></section>
+
+<section class="alt" id="gallery"><div class="wrap">
+ <span class="tag">Gallery</span><h2>Photo gallery</h2>
+ <p class="lead">Placeholder tiles. Replace them with your real academy photos in <code>GALLERY</code> (image file paths).</p>
+ <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="admission"><div class="wrap two">
+ <div><span class="tag">Admission</span><h2>Enquire about joining</h2><p class="lead">Fill in the form and the academy will get back to you with admission details.</p></div>
+ <form id="enq" name="admission" method="POST" data-netlify="true" netlify-honeypot="bot" novalidate>
+  <input type="hidden" name="form-name" value="admission"><input type="text" name="bot" hidden>
+  <div class="f"><label for="student">Student Name *</label><input id="student" name="student" required><span class="err"></span></div>
+  <div class="f"><label for="parent">Parent Name *</label><input id="parent" name="parent" required><span class="err"></span></div>
+  <div class="f"><label for="age">Age *</label><input id="age" name="age" type="number" min="4" max="40" required><span class="err"></span></div>
+  <div class="f"><label for="mobile">Mobile Number *</label><input id="mobile" name="mobile" type="tel" inputmode="numeric" placeholder="10-digit number" required><span class="err"></span></div>
+  <div class="f full"><label for="email">Email *</label><input id="email" name="email" type="email" required><span class="err"></span></div>
+  <div class="f"><label for="exp">Cricket Experience *</label><select id="exp" name="experience" required><option value="">Select</option><option>No experience</option><option>Less than 1 year</option><option>1–3 years</option><option>3+ years</option></select><span class="err"></span></div>
+  <div class="f"><label for="prog">Interested Program *</label><select id="prog" name="program" required><option value="">Select</option></select><span class="err"></span></div>
+  <div class="msg full" id="status" role="status"></div>
+  <button class="btn full" type="submit" id="sub"><span class="spin"></span>Submit Enquiry</button>
+ </form>
+</div></section>
+
+<section class="alt"><div class="wrap">
+ <span class="tag">Testimonials</span><h2>What students &amp; parents say</h2>
+ <div class="grid" id="tst"></div>
+</div></section>
+
+<section id="location"><div class="wrap two">
+ <div class="map" id="map"></div>
+ <div><span class="tag">Find us</span><h2>Our location</h2><p class="lead" id="addr"></p><a class="btn" id="dir" target="_blank" rel="noopener">Get Directions</a></div>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap">
+ <span class="tag">Contact</span><h2>Get in touch</h2>
+ <p class="lead"><b>Central Cricket Academy</b><br>Gomti Nagar, Lucknow, Uttar Pradesh.</p>
+ <ul class="clist" id="clist"></ul>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div class="fg">
+  <div><a href="#home" class="logo"><svg viewBox="0 0 40 40" style="width:34px"><circle cx="20" cy="20" r="19" fill="#1f9d55"/><rect x="17" y="6" width="6" height="22" rx="2" fill="#fff" transform="rotate(25 20 20)"/><circle cx="26" cy="29" r="5" fill="#ff7a1a"/></svg>Central Cricket Academy</a><p style="color:var(--muted)">Professional cricket coaching in Gomti Nagar, Lucknow.</p>
+  <div class="soc"><a href="#" data-soc="facebook">Facebook</a><a href="#" data-soc="instagram">Instagram</a><a href="#" data-soc="youtube">YouTube</a></div></div>
+  <div><h3>Quick Links</h3><ul><li><a href="#about">About Us</a></li><li><a href="#coaching">Coaching</a></li><li><a href="#facilities">Facilities</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#admission">Join Academy</a></li></ul></div>
+  <div><h3>Contact</h3><ul id="fcon"></ul></div>
+ </div>
+ <div class="copy">© <span id="yr"></span> Central Cricket Academy. All rights reserved.</div>
+</div></footer>
+
+<a class="wa" id="wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14c-.2.6-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.100-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.100.1.300 0 .5l-.4.600-.4.400c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.9-1c.2-.2.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg></a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true"><button class="x" aria-label="Close">×</button><button class="p" aria-label="Previous">‹</button><img alt=""><button class="n" aria-label="Next">›</button></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
