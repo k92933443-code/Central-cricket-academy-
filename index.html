@@ -6,7 +6,98 @@
 <title>Central Cricket Academy | Cricket Coaching in Gomti Nagar, Lucknow</title>
 <meta name="description" content="Central Cricket Academy in Gomti Nagar, Lucknow offers professional cricket coaching for beginners and advanced players. Join the academy today.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="css/style.css">
+<style>
+:root{--navy:#0a1730;--navy2:#10224a;--green:#1f9d55;--orange:#ff7a1a;--white:#fff;--muted:#b6c2dc;--card:#112349;--line:rgba(255,255,255,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--navy);color:var(--white);font:400 16px/1.65 Poppins,system-ui,sans-serif}
+h1,h2,h3{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;letter-spacing:.5px;line-height:1.15;margin:0 0 .5em}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1140px,92%);margin:auto}
+section{padding:80px 0}
+.alt{background:var(--navy2)}
+.tag{color:var(--orange);font-weight:600;letter-spacing:2px;font-size:.8rem;text-transform:uppercase}
+h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.lead{color:var(--muted);max-width:640px}
+.btn{display:inline-block;border:0;cursor:pointer;font:600 .95rem Poppins,sans-serif;padding:13px 28px;border-radius:50px;background:var(--orange);color:#fff;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(255,122,26,.4)}
+.btn.ghost{background:transparent;border:2px solid #fff}
+.btn.ghost:hover{background:#fff;color:var(--navy);box-shadow:none}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,23,48,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font:700 1.15rem Oswald,sans-serif;text-transform:uppercase}
+.logo svg{width:38px;height:38px}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;align-items:center}
+nav a:not(.btn){font-size:.9rem;font-weight:500;position:relative}
+nav a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--orange);transition:.25s}
+nav a:not(.btn):hover::after{width:100%}
+nav .btn{padding:9px 20px}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:100px;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 30%,rgba(31,157,85,.35),transparent 50%),linear-gradient(135deg,#071126,#0f2a55 70%,#12532f)}
+.hero::before{content:"";position:absolute;right:-120px;top:50%;width:520px;height:520px;transform:translateY(-50%);border-radius:50%;border:2px dashed rgba(255,255,255,.12);animation:spin 40s linear infinite}
+.hero::after{content:"";position:absolute;right:60px;top:50%;width:260px;height:260px;margin-top:-130px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#e0412a,#8f1a10);box-shadow:0 0 80px rgba(224,65,42,.4);animation:float 5s ease-in-out infinite}
+@keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
+@keyframes float{50%{transform:translateY(-18px)}}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.2rem,6vw,4.4rem);max-width:760px}
+.hero h1 span{color:var(--orange)}
+.hero p{color:var(--muted);max-width:560px;font-size:1.08rem}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:36px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--green);box-shadow:0 14px 34px rgba(0,0,0,.35)}
+.ic{width:50px;height:50px;border-radius:12px;background:linear-gradient(135deg,var(--green),#13693a);display:grid;place-items:center;font-size:1.5rem;margin-bottom:14px}
+.card h3{font-size:1.2rem}.card p{color:var(--muted);margin:0;font-size:.93rem}
+.two{display:grid;gap:40px;grid-template-columns:1.1fr 1fr;align-items:center}
+.mv{display:grid;gap:16px}
+.mv div{border-left:4px solid var(--orange);background:var(--card);padding:18px 22px;border-radius:0 12px 12px 0}
+.mv h3{font-size:1.1rem;margin-bottom:4px}.mv p{margin:0;color:var(--muted);font-size:.93rem}
+.edit{outline:1px dashed var(--orange);outline-offset:3px}
+.coach .ph{height:170px;border-radius:12px;background:linear-gradient(135deg,#17305f,#0d1d3d);display:grid;place-items:center;font-size:3rem;margin-bottom:14px;color:var(--muted)}
+.gal{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin-top:36px}
+.gal button{padding:0;border:0;border-radius:14px;overflow:hidden;cursor:pointer;aspect-ratio:4/3;background:none;position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
+.gal button:hover img{transform:scale(1.08)}
+.lb{position:fixed;inset:0;background:rgba(3,8,20,.94);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex}.lb img{max-width:100%;max-height:80vh;border-radius:12px}
+.lb button{position:absolute;background:rgba(255,255,255,.15);color:#fff;border:0;width:46px;height:46px;border-radius:50%;font-size:1.5rem;cursor:pointer}
+.lb .x{top:calc(18px + env(safe-area-inset-top,0px));right:18px}.lb .p{left:14px}.lb .n{right:14px}
+form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.f{display:flex;flex-direction:column;gap:5px}.f.full,form .full{grid-column:1/-1}
+label{font-size:.85rem;font-weight:500}
+input,select{background:var(--navy);color:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:inherit;width:100%}
+input:focus,select:focus{outline:2px solid var(--green);border-color:transparent}
+.err{color:#ff8a7a;font-size:.78rem;min-height:1em}
+.f.bad input,.f.bad select{border-color:#ff6b57}
+.msg{padding:12px 16px;border-radius:10px;font-size:.9rem;display:none}
+.msg.ok{display:block;background:rgba(31,157,85,.2);border:1px solid var(--green)}
+.msg.fail{display:block;background:rgba(255,107,87,.15);border:1px solid #ff6b57}
+.spin{display:none;width:16px;height:16px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:s .7s linear infinite;vertical-align:-2px;margin-right:8px}
+.loading .spin{display:inline-block}@keyframes s{to{transform:rotate(360deg)}}
+.quote{font-style:italic;color:var(--muted)}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:340px;background:var(--card);display:grid}
+.map iframe{width:100%;height:100%;min-height:340px;border:0}
+.clist{list-style:none;padding:0;margin:20px 0}.clist li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px}
+.clist b{min-width:110px;color:var(--orange);font-weight:600}
+footer{background:#060f22;padding:56px 0 26px;border-top:1px solid var(--line)}
+.fg{display:grid;gap:30px;grid-template-columns:1.4fr 1fr 1.2fr}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;color:var(--muted)}
+footer h3{font-size:1.05rem}.copy{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:.85rem}
+.soc{display:flex;gap:10px;margin-top:12px}.soc a{border:1px solid var(--line);border-radius:50px;padding:5px 14px;font-size:.8rem;color:var(--muted)}
+.soc a:hover{background:var(--orange);color:#fff}
+.wa{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;left:18px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.4);animation:pulse 2.2s infinite}
+.wa svg{width:30px;height:30px;fill:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.rv{opacity:0;transform:translateY(28px);transition:.7s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){
+.burger{display:block}
+nav ul{position:absolute;top:70px;left:0;right:0;background:var(--navy);flex-direction:column;padding:22px 0;gap:18px;display:none;border-bottom:1px solid var(--line)}
+nav ul.open{display:flex}
+.two,.fg{grid-template-columns:1fr}form{grid-template-columns:1fr}
+.hero::after,.hero::before{opacity:.25;right:-80px}
+section{padding:60px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
 <header><div class="wrap nav">
@@ -107,6 +198,77 @@
 
 <div class="lb" id="lb" role="dialog" aria-modal="true"><button class="x" aria-label="Close">×</button><button class="p" aria-label="Previous">‹</button><img alt=""><button class="n" aria-label="Next">›</button></div>
 
-<script src="js/script.js"></script>
+<script>
+/* ===== EDIT YOUR BUSINESS INFO HERE ===== */
+const CFG={
+ name:"Central Cricket Academy",
+ address:"Gokul Bihar Colony, KNo-61, Bangarmau, Sector 6, Near Yashraj Institute, Gomti Nagar, Lucknow, Uttar Pradesh – 226030",
+ mapLink:"https://maps.app.goo.gl/tEYMCRn2trbAHqAv8",
+ phone:"",        // e.g. "+91XXXXXXXXXX"
+ whatsapp:"",     // digits only with country code, e.g. "91XXXXXXXXXX"
+ email:"",
+ hours:"",        // e.g. "Mon–Sat, 6:00 AM – 8:00 AM"
+ social:{facebook:"",instagram:"",youtube:""},
+ supabase:{url:"https://cbkovdzufijvxvobxekp.supabase.co",key:"sb_publishable_ao4CYC78qlVua6Z8EluWmw_VDRemtH_",table:"admission_enquiries"}
+};
+const PROGRAMS=[["🏏","Beginner Cricket Training","Fundamentals of grip, stance and basic shots for new players."],["🏆","Advanced Cricket Training","Match-focused skills and game awareness for experienced players."],["🔥","Batting Coaching","Technique, shot selection and building an innings."],["🎯","Bowling Coaching","Line, length, variations and a sound bowling action."],["🧤","Fielding Training","Catching, ground fielding, throwing and agility."],["💪","Fitness &amp; Physical Training","Strength, stamina and conditioning built for cricketers."]];
+const FACILITIES=[["Cricket Practice Nets",""],["Batting Practice",""],["Bowling Practice",""],["Fielding Practice",""],["Fitness Training",""],["Match Practice",""]]; // set 2nd value to a description once confirmed
+const WHY=[["📈","Skill Development"],["🧘","Discipline and Fitness"],["👤","Individual Attention"],["📅","Regular Practice"],["🏟️","Match Preparation"],["🚀","Career Development"]];
+const COACHES=[{name:"Coach Name",exp:"Experience: add here",spec:"Specialization: add here",photo:""},{name:"Coach Name",exp:"Experience: add here",spec:"Specialization: add here",photo:""},{name:"Coach Name",exp:"Experience: add here",spec:"Specialization: add here",photo:""}];
+const TESTIMONIALS=[]; // e.g. [{text:"...",by:"Parent of ..."}]  (real reviews only)
+const GALLERY=[["Batting session","#1f9d55","🏏"],["Bowling practice","#ff7a1a","🎯"],["Fielding drills","#2b6cb0","🧤"],["Net practice","#13693a","🏟️"],["Fitness training","#c2410c","💪"],["Match practice","#1e3a8a","🏆"]]; // replace with ["caption","images/photo.jpg"] for real photos
+/* ======================================== */
+const $=s=>document.querySelector(s),T=(c,h,p={})=>{const e=document.createElement(c);e.innerHTML=h;Object.assign(e,p);return e};
+const ph=v=>v||'<span class="edit">Add here</span>';
+$("#programs").innerHTML=PROGRAMS.map(p=>`<div class="card rv"><div class="ic">${p[0]}</div><h3>${p[1]}</h3><p>${p[2]}</p></div>`).join("");
+$("#facGrid").innerHTML=FACILITIES.map(f=>`<div class="card rv"><div class="ic">✔</div><h3>${f[0]}</h3><p>${f[1]||'<span class="edit">Description to be confirmed by the academy</span>'}</p></div>`).join("");
+$("#why").innerHTML=WHY.map(w=>`<div class="card rv"><div class="ic">${w[0]}</div><h3>${w[1]}</h3></div>`).join("");
+$("#coaches").innerHTML=COACHES.map(c=>`<div class="card coach rv"><div class="ph">${c.photo?`<img src="${c.photo}" alt="${c.name}" style="width:100%;height:100%;object-fit:cover;border-radius:12px">`:"👤"}</div><h3 class="edit">${c.name}</h3><p class="edit">${c.exp}</p><p class="edit" style="margin-top:6px">${c.spec}</p></div>`).join("");
+$("#tst").innerHTML=TESTIMONIALS.length?TESTIMONIALS.map(t=>`<div class="card rv"><p class="quote">“${t.text}”</p><b>${t.by}</b></div>`).join(""):'<div class="card"><p class="quote">Real student and parent reviews will appear here. Add them in <code>TESTIMONIALS</code>.</p></div>';
+$("#prog").append(...PROGRAMS.map(p=>T("option",p[1].replace("&amp;","&"))));
+/* gallery + lightbox */
+const svg=(t,c,i)=>"data:image/svg+xml;utf8,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='${c}'/><stop offset='1' stop-color='#0a1730'/></linearGradient></defs><rect width='800' height='600' fill='url(#g)'/><text x='400' y='320' font-size='140' text-anchor='middle'>${i}</text><text x='400' y='450' font-size='40' fill='#fff' text-anchor='middle' font-family='sans-serif'>${t}</text></svg>`);
+const imgs=GALLERY.map(g=>({alt:g[0],src:g[1].startsWith("#")?svg(g[0],g[1],g[2]):g[1]}));
+const gal=$("#gal");imgs.forEach((im,i)=>{const b=T("button",`<img src="${im.src}" alt="${im.alt}" loading="lazy">`);b.onclick=()=>open(i);b.querySelector("img").onerror=e=>{e.target.src=svg("Image unavailable","#334155","🏏")};gal.append(b)});
+const lb=$("#lb"),lbi=lb.querySelector("img");let cur=0;
+function open(i){cur=(i+imgs.length)%imgs.length;lbi.src=imgs[cur].src;lbi.alt=imgs[cur].alt;lb.classList.add("on")}
+lb.querySelector(".x").onclick=()=>lb.classList.remove("on");lb.querySelector(".p").onclick=()=>open(cur-1);lb.querySelector(".n").onclick=()=>open(cur+1);
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove("on")};
+addEventListener("keydown",e=>{if(!lb.classList.contains("on"))return;if(e.key==="Escape")lb.classList.remove("on");if(e.key==="ArrowLeft")open(cur-1);if(e.key==="ArrowRight")open(cur+1)});
+/* contact, map, footer */
+$("#addr").textContent=CFG.address;$("#dir").href=CFG.mapLink;
+const rows=[["Phone",CFG.phone?`<a href="tel:${CFG.phone}">${CFG.phone}</a>`:ph()],["WhatsApp",CFG.whatsapp?`<a href="https://wa.me/${CFG.whatsapp}">+${CFG.whatsapp}</a>`:ph()],["Email",CFG.email?`<a href="mailto:${CFG.email}">${CFG.email}</a>`:ph()],["Opening Hours",ph(CFG.hours)]];
+$("#clist").innerHTML=rows.map(r=>`<li><b>${r[0]}</b><span>${r[1]}</span></li>`).join("");
+$("#fcon").innerHTML=`<li>Gomti Nagar, Lucknow, UP – 226030</li>`+rows.map(r=>`<li>${r[0]}: ${r[1]}</li>`).join("");
+document.querySelectorAll("[data-soc]").forEach(a=>{const u=CFG.social[a.dataset.soc];if(u){a.href=u;a.target="_blank";a.rel="noopener"}});
+$("#wa").href=CFG.whatsapp?`https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent("Hello, I want to know about Central Cricket Academy.")}`:CFG.mapLink.replace(/.*/,"#contact");
+$("#yr").textContent=new Date().getFullYear();
+const mp=$("#map");mp.innerHTML='<div style="display:grid;place-items:center;padding:30px;text-align:center;color:var(--muted)">Loading map…</div>';
+const fr=T("iframe","",{src:"https://maps.google.com/maps?q="+encodeURIComponent(CFG.name+", Gomti Nagar, Lucknow")+"&output=embed",title:"Academy location",loading:"lazy"});
+fr.onload=()=>mp.replaceChildren(fr);setTimeout(()=>{if(!mp.contains(fr))mp.innerHTML=`<div style="display:grid;place-items:center;padding:30px;text-align:center"><p>Map could not load here.<br><a class="btn" href="${CFG.mapLink}" target="_blank" rel="noopener">Open in Google Maps</a></p></div>`},6000);fr.style.display="none";mp.append(fr);
+/* nav */
+const menu=$("#menu"),bg=$("#burger");bg.onclick=()=>{const o=menu.classList.toggle("open");bg.setAttribute("aria-expanded",o)};menu.onclick=e=>{if(e.target.tagName==="A"){menu.classList.remove("open");bg.setAttribute("aria-expanded",false)}};
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+/* form */
+const form=$("#enq"),st=$("#status");
+const rules={student:v=>v.trim().length>=2||"Enter student name",parent:v=>v.trim().length>=2||"Enter parent name",age:v=>(v>=4&&v<=40)||"Enter a valid age (4–40)",mobile:v=>/^[6-9]\d{9}$/.test(v.replace(/[\s-]/g,"").replace(/^(\+91|0)/,""))||"Enter a valid 10-digit mobile number",email:v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)||"Enter a valid email",experience:v=>!!v||"Please select",program:v=>!!v||"Please select"};
+function check(el){const r=rules[el.name]?.(el.value),f=el.closest(".f");if(!f)return true;f.classList.toggle("bad",r!==true);f.querySelector(".err").textContent=r===true?"":r;return r===true}
+form.querySelectorAll("input,select").forEach(el=>el.addEventListener("blur",()=>check(el)));
+form.onsubmit=async e=>{e.preventDefault();st.className="msg full";
+ const ok=[...form.querySelectorAll("[required]")].map(check).every(Boolean);if(!ok){st.className="msg full fail";st.textContent="Please correct the highlighted fields.";return}
+ const btn=$("#sub");btn.classList.add("loading");btn.disabled=true;
+ const d=new FormData(form);
+ try{const S=CFG.supabase,g=k=>(d.get(k)||"").trim();
+  const row={student_name:g("student"),parent_name:g("parent"),age:parseInt(g("age"),10),mobile:g("mobile").replace(/[\s-]/g,"").replace(/^(\+91|0)/,""),email:g("email"),experience:g("experience"),program:g("program")};
+  const r=await fetch(`${S.url}/rest/v1/${S.table}`,{method:"POST",headers:{"Content-Type":"application/json",apikey:S.key,Authorization:"Bearer "+S.key,Prefer:"return=minimal"},body:JSON.stringify(row)});
+  if(!r.ok)throw new Error(await r.text());st.className="msg full ok";st.textContent="Thank you! Your enquiry has been submitted. We will contact you soon.";form.reset()}
+ catch(err){console.error(err);st.className="msg full fail";
+  if(CFG.whatsapp){const m=[...d].filter(([k])=>!["form-name","bot"].includes(k)).map(([k,v])=>k+": "+v).join("\n");st.textContent="Could not submit online. Opening WhatsApp so you can send your enquiry instead.";open_wa(m)}
+  else st.textContent="Submission failed. Please try again later or contact the academy directly."}
+ btn.classList.remove("loading");btn.disabled=false};
+function open_wa(m){window.open(`https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent("Admission enquiry\n"+m)}`,"_blank")}
+</script>
 </body>
 </html>
