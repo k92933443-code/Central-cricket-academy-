@@ -1,4 +1,4 @@
-# Central Cricket Academy Website
+# Rajaram Sports Academy Website
 
 Static site: HTML5 + CSS3 + vanilla JavaScript.
 
